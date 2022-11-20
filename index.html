@@ -80,7 +80,49 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eos vero asperiores molestiae, saepe nesciunt sunt? Eius quaerat molestias, eum delectus, molestiae dolorem libero ad harum assumenda voluptatum vel vitae.</p> -->
+            <form class="form">
+              <div class="form-title">
+                <h2 class="form-title">
+                  Залиште свої дані, ми вам передзвонимо
+                </h2>
+              </div>
+
+              <div class="form-field">
+                <label for="name">Ім'я</label>
+                <input type="text" name="user-name" id="name" />
+              </div>
+
+              <div class="form-field">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="user-tel" id="tel" />
+              </div>
+
+              <div class="form-field">
+                <label for="mail">Пошта</label>
+                <input type="email" name="user-mail" id="mail" />
+              </div>
+
+              <div class="form-field">
+                <label for="comment">Коментар</label>
+                <textarea
+                  class="comment"
+                  name="comment"
+                  id="comment"
+                  placeholder="Введіть текст"
+                  
+                  rows="6"
+                ></textarea>
+              </div>
+
+              <div class="policyty">
+                <input type="checkbox" name="agree" value="" id="agree" />
+                <label for="agree"
+                  >Погоджуюся з розсилкою та приймаю Умови договору</label
+                >
+              </div>
+
+              <button class="modal-submit" type="submit">Відправити</button>
+            </form>
             <button class="btn-close" data-modal-close></button>
             <svg class="button-close-icon" width="30" height="30">
               <use href="./image/icons.svg#icon-close"></use>
