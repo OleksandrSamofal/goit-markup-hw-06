@@ -248,6 +248,7 @@ fill: var(--accent-color);
 }
 
 .form-field {
+  position: relative;
   /* outline: 1px solid blue; */
   display: flex;
   flex-direction: column;
@@ -261,12 +262,12 @@ fill: var(--accent-color);
   border-radius: 4px;
 }
 
-.form-field input:hover{
+.form-field input:hover {
   border-color: var(--accent-color);
   cursor: pointer;
 }
 
-.form-field input{
+.form-field input {
   height: 40px;
 }
 
@@ -297,22 +298,23 @@ fill: var(--accent-color);
   color: var(--secondary-text-color);
 }
 
-.modal-submit{
-  padding: 10px  52px;
+.modal-submit {
+  padding: 10px 52px;
   color: var(--main-white-color);
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-text-align: center;
-letter-spacing: 0.06em;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
-.modal-submit:hover{
+.modal-submit:hover {
   cursor: pointer;
+  background-color: var(--active-bgc-button);
 }
 
 .form-title {
@@ -410,7 +412,6 @@ letter-spacing: 0.06em;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  
 }
 
 .btn-close {
@@ -422,12 +423,18 @@ letter-spacing: 0.06em;
   right: 8px;
   padding: 0;
   cursor: pointer;
+  color: currentColor;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--main-white-color);
 
   /* background-color: var(--main-white-color);
   color: var(--main-white-color); */
+}
+
+.button-close:hover {
+  /* color: var(--accent-color);
+  fill: var(--accent-color); */
 }
 
 .button-close-icon {
@@ -438,7 +445,7 @@ letter-spacing: 0.06em;
   top: 13px;
   right: 13px;
   padding: 0;
-  fill: var(--secondary-fill);
+  /* fill: currentColor; */
   border-radius: 50%;
   /* border: 1px solid rgba(0, 0, 0, 0.1); */
   background-color: var(--main-white-color);
@@ -450,7 +457,17 @@ letter-spacing: 0.06em;
   cursor: pointer;
 }
 
+.icon {
+  position: absolute;
+  bottom: 20px;
+  left: 14px;
+  transform: translateY(50%);
 
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+}
 
 /* .btn-close::before {
   content: " ";
@@ -691,7 +708,6 @@ letter-spacing: 0.06em;
   /* margin-top: 94px; */
   margin-bottom: 50px;
 }
-
 
 .work-label {
   display: block;

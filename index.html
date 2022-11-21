@@ -89,16 +89,19 @@
 
               <div class="form-field">
                 <label for="name">Ім'я</label>
+                <span class="icon"></span>
                 <input type="text" name="user-name" id="name" />
               </div>
 
               <div class="form-field">
                 <label for="tel">Телефон</label>
+                <span class="icon"></span>
                 <input type="tel" name="user-tel" id="tel" />
               </div>
 
               <div class="form-field">
                 <label for="mail">Пошта</label>
+                <span class="icon"></span>
                 <input type="email" name="user-mail" id="mail" />
               </div>
 
@@ -109,7 +112,6 @@
                   name="comment"
                   id="comment"
                   placeholder="Введіть текст"
-                  
                   rows="6"
                 ></textarea>
               </div>
@@ -123,7 +125,7 @@
 
               <button class="modal-submit" type="submit">Відправити</button>
             </form>
-            <button class="btn-close" data-modal-close></button>
+            <button class="btn-close" type="button" data-modal-close></button>
             <svg class="button-close-icon" width="30" height="30">
               <use href="./image/icons.svg#icon-close"></use>
             </svg>
