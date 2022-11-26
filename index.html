@@ -82,49 +82,50 @@
           <div class="modal">
             <form class="form">
               <div class="form-title">
-                <p>
-                  Залиште свої дані, ми вам передзвонимо
-                </p>
+                <p>Залиште свої дані, ми вам передзвонимо</p>
               </div>
 
               <div class="form-field">
-                <label for="name">Ім'я</label>
-                <span class="icon">
-                  <svg class="icon-modal">
-                    <use href="./image/icons.svg#person-modal"></use>
-                  </svg>
-                </span>
+                <label for="name" class="form-label">Ім'я</label>
+
                 <input
                   class="form-input"
                   type="text"
                   name="user-name"
                   id="name"
                 />
+                <span class="icon">
+                  <svg class="icon-modal">
+                    <use href="./image/icons.svg#person-modal"></use>
+                  </svg>
+                </span>
               </div>
 
               <div class="form-field">
-                <label for="tel">Телефон</label>
+                <label for="tel" class="form-label">Телефон</label>
+
+                <input class="form-input" type="tel" name="user-tel" id="tel" />
                 <span class="icon">
                   <svg class="icon-modal">
                     <use href="./image/icons.svg#phone-modal"></use>
                   </svg>
                 </span>
-                <input class="form-input" type="tel" name="user-tel" id="tel" />
               </div>
 
               <div class="form-field">
-                <label for="mail">Пошта</label>
-                <span class="icon">
-                  <svg class="icon-modal">
-                    <use href="./image/icons.svg#email-modal"></use>
-                  </svg>
-                </span>
+                <label for="mail" class="form-label">Пошта</label>
+
                 <input
                   class="form-input"
                   type="email"
                   name="user-mail"
                   id="mail"
                 />
+                <span class="icon">
+                  <svg class="icon-modal">
+                    <use href="./image/icons.svg#email-modal"></use>
+                  </svg>
+                </span>
               </div>
 
               <div class="form-field">
